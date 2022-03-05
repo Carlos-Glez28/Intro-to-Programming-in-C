@@ -47,9 +47,11 @@ double approximatePi(int iterations){
     int sign = -1;
     double sum = 0;
     for(int i = 0; i < iterations; i++){
+        //This represents the positive part of the summation
         if(i % 2 == 0){
             sum += 1.0 / (2.0 * i + 1.0);//2*i+1 is always odd
         }else{
+          //this represents the negative part of the summation
             sum += (sign) * (1.0 / (2.0 * i + 1.0));
         }
     }
